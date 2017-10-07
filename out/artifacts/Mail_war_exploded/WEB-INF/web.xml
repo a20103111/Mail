@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+           version="3.0">
+
+
+
+   <servlet>
+       <servlet-name>ReceviceMailServlet</servlet-name>
+       <servlet-class>com.Mail.Servlet.ReceviceMailServlet</servlet-class>
+   </servlet>
+    <servlet-mapping>
+        <servlet-name>ReceviceMailServlet</servlet-name>
+        <url-pattern>/ReceviceMailServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DisplayHead</servlet-name>
+        <servlet-class>com.Mail.Servlet.DisplayHead</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayHead</servlet-name>
+        <url-pattern>/DisplayHead</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DisplayContent</servlet-name>
+        <servlet-class>com.Mail.Servlet.DisplayContent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayContent</servlet-name>
+        <url-pattern>/DisplayContent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HandleAttach</servlet-name>
+        <servlet-class>com.Mail.Servlet.HandleAttact</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HandleAttach</servlet-name>
+        <url-pattern>/HandleAttach</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowHeader</servlet-name>
+        <servlet-class>com.Mail.Servlet.ShowHeader</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowHeader</servlet-name>
+        <url-pattern>/ShowHeader</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowContent</servlet-name>
+        <servlet-class>com.Mail.Servlet.ShowContent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowContent</servlet-name>
+        <url-pattern>/ShowContent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HandleAttachments</servlet-name>
+        <servlet-class>com.Mail.Servlet.HandleAttachments</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HandleAttachments</servlet-name>
+        <url-pattern>/HandleAttachments</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.Mail.Servlet.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/UserServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MailServlet</servlet-name>
+        <servlet-class>com.Mail.Servlet.MailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MailServlet</servlet-name>
+        <url-pattern>/MailServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SendMailServlet</servlet-name>
+        <servlet-class>com.Mail.Servlet.SendMailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SendMailServlet</servlet-name>
+        <url-pattern>/SendMailServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ActionServlet</servlet-name>
+        <servlet-class>com.Mail.Servlet.ActionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ActionServlet</servlet-name>
+        <url-pattern>/ActionServlet</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>com.Mail.Filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>com.Mail.Filter.EncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+</web-app>
